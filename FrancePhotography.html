@@ -1,0 +1,190 @@
+ <!DOCTYPE html> 
+<html>  
+<head> 
+
+
+<meta charset="utf-8"> 
+<title>
+French Photography
+</title>
+	  <link rel="stylesheet" type="text/css" href="Css/stylesheet.css">
+</head>
+
+<body>
+	 
+	
+		<div class="heading1">
+		
+		<img src="Images/Logo.png" class="Logo" alt="Logo" id="Logo">
+		
+		<h1> French Photography </h1>
+	
+	<ul>
+		<li><a class="navbar" href="HomePage.html" style="color:black"> Home Page </a></li>
+		<li><a class="navbar" href="France.html" style="color:black"> France </a></li>
+		<li><a class="navbar" href="Italy.html" style="color:black"> Italy </a></li>
+		<li><a class="navbar" href="Spain.html" style="color:black"> Spain </a></li>
+		<li><a class="navbar" href="England.html" style="color:black"> England </a></li>
+	</ul>
+	 
+		</div>
+
+<div class="slideshow">
+
+<div class="Slides animation">
+  <img class="slideshowimage" src="Images/Eiffel_Tower.png">
+</div>
+
+<div class="Slides animation">
+  <img class="slideshowimage" src="Images/Frog_Legs.png">
+</div>
+
+<div class="Slides animation">
+  <img class="slideshowimage" src="Images/Louvre_Pyramid.png">
+</div>
+
+<div class="Slides animation">
+  <img class="slideshowimage" src="Images/Paris.png">
+</div>
+
+<div class="Slides animation">
+  <img class="slideshowimage" src="Images/Snails.png">
+</div>
+
+<a class="left" onclick="addSlide(-1)">&#9665;</a>
+<a class="right" onclick="addSlide(1)">&#9655;</a>
+
+</div>
+<br>
+
+<div class="markergroup">
+  <span class="marker" onclick="currentSlide(1)"></span> 
+  <span class="marker" onclick="currentSlide(2)"></span>
+  <span class="marker" onclick="currentSlide(3)"></span>  
+  <span class="marker" onclick="currentSlide(4)"></span>
+  <span class="marker" onclick="currentSlide(5)"></span>
+</div>
+
+
+
+<div class="leftdiv">
+    <img class="image" onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="Images/Eiffel_Tower.png" alt="Eiffel_Tower">
+</div>
+<div class="middlediv"><div class="middlediv2"><p class="paragraph">The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower.</p></div></div>
+
+<div class="leftdiv">
+    <img class="image" onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="Images/Frog_Legs.png" alt="Eiffel_Tower">
+</div>
+<div class="middlediv"><div class="middlediv2"><p class="paragraph">Battered Frog legs are one of the better-known delicacies of French and Chinese cuisine.</p></div></div>
+
+<div class="leftdiv">
+    <img class="image" onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="Images/Louvre_Pyramid.png" alt="Eiffel_Tower">
+</div>
+<div class="middlediv"><div class="middlediv2"><p class="paragraph">The Louvre Pyramid (Pyramide du Louvre) is a large glass and metal pyramid designed by Chinese-American architect I. M. Pei, surrounded by three smaller pyramids, in the main courtyard (Cour Napoléon) of the Louvre Palace (Palais du Louvre) in Paris.	<a class="pageTop2" href="#top">Back to top</a></p></div></div>
+
+<div class="leftdiv">
+    <img class="image" onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="Images/Paris.png" alt="Eiffel_Tower">
+</div>
+<div class="middlediv"><div class="middlediv2"><p class="paragraph">Paris is the capital and most populous city of France, with a population of 2,148,271 residents (official estimate, 1 January 2020) in an area of 105 square kilometres (41 square miles).</p></div></div>
+
+<div class="leftdiv">
+    <img class="image" onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="Images/Snails.png" alt="Eiffel_Tower">
+</div>
+<div class="middlediv"><div class="middlediv2"><p class="paragraph">Escargots are a dish consisting of cooked edible land snails. They are usually cooked with garlic butter and wine. Other ingredients such as parsley and thyme may be added.</p></div></div>
+
+<form>
+
+	<fieldset>
+	<legend> Images in detail </legend>
+
+	<label> Select the picture you would like to see in detail: <br></label>
+
+	<input type="checkbox" id="Eiffel_Tower" name="Images" onclick="ShowHideDiv1()"  value="Eiffel_Tower" />
+	<label for="Eiffel_Tower">Eiffel Tower</label><br>
+
+	<input type="checkbox" id="Frog_Legs" name="Images" onclick="ShowHideDiv2()" value="Frog_Legs">
+	<label for="Frog_Legs">Frog Legs</label><br>
+
+	<input type="checkbox" id="Louvre_Pyramid" name="Images" onclick="ShowHideDiv3()" value="Louvre_Pyramid">
+	<label for="Louvre_Pyramid">The Louvre Pyramid</label><br>
+
+	<input type="checkbox" id="Paris" name="Images" onclick="ShowHideDiv4()" value="Paris">
+	<label for="Paris">Paris</label><br>
+
+	<input type="checkbox" id="Snails" name="Images" onclick="ShowHideDiv5()" value="Snails">
+	<label for="Snails">Snails</label><br>
+	
+	<div id="show1" style="display: none">
+	<img class="image" src="Images/Eiffel_Tower.png" alt="Eiffel_Tower">
+	<p class="paragraph">The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower.</p>
+	</div>
+	
+	<div id="show2" style="display: none">
+	<img class="image" src="Images/Frog_Legs.png" alt="Frog_Legs">
+	<p class="paragraph">Battered Frog legs are one of the better-known delicacies of French and Chinese cuisine.</p>
+	</div>
+	
+	<div id="show3" style="display: none">
+	<img class="image" src="Images/Louvre_Pyramid.png" alt="Louvre_Pyramid">
+	<p class="paragraph">The Louvre Pyramid (Pyramide du Louvre) is a large glass and metal pyramid designed by Chinese-American architect I. M. Pei, surrounded by three smaller pyramids, in the main courtyard (Cour Napoléon) of the Louvre Palace (Palais du Louvre) in Paris.</p>
+	</div>
+	
+	<div id="show4" style="display: none">
+	<img class="image" src="Images/Paris.png" alt="Paris">
+	<p class="paragraph">Paris is the capital and most populous city of France, with a population of 2,148,271 residents (official estimate, 1 January 2020) in an area of 105 square kilometres (41 square miles). Since the 17th century, Paris has been one of Europe's major centres of finance, diplomacy, commerce, fashion, science and arts.</p>
+	</div>
+	<div id="show5" style="display: none">
+	<img class="image" src="Images/Snails.png" alt="Snails">
+	<p class="paragraph">Escargots are a dish consisting of cooked edible land snails. They are usually cooked with garlic butter and wine. Other ingredients such as parsley and thyme may be added.</p></div>
+	</div>
+	
+	</fieldset>
+	
+	<br>
+	
+	<fieldset>
+	
+	<legend> Developer Options: </legend>
+	
+	<label for="background"> Change background colour to: </label>
+	<select id="background" size="" onchange='changebgcolor(this);'>
+	<option value="select" selected disabled hidden> Select a colour </option>
+	<option value="black">Black</option>
+	<option value="gray">Gray</option>
+	<option value="white">White</option>
+	<option value="blue">Blue</option>
+	<option value="red">Red</option>
+	</select>
+	
+	<br>
+	
+	<label for="text"> Change text colour to: </label>
+	<select name="backGround" size="" onChange="updateTextColour(this.value)">
+	<option value="select" selected disabled hidden> Select a colour </option>
+	<option value="black">Black</option>
+	<option value="gray">Gray</option>
+	<option value="white">White</option>
+	<option value="blue">Blue</option>
+	<option value="red">Red</option>
+	</select>
+	
+	</fieldset>
+	
+</form>
+
+	<br>
+	
+	<hr>
+	
+	<a class="pageTop1" href="#top">Back to top</a>
+	
+	
+	<a class="pageEditor1" href="PageEditor.html">Page editor </a>
+	
+	<br>
+	
+</body> 
+
+	 <script type="text/javascript" src="Java/FrancePhotography.js"></script> 
+
+</html>
