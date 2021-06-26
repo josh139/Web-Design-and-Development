@@ -9,7 +9,7 @@ document.getElementById("HomePage").
 });
 document.getElementById("France").
 	addEventListener("click", function() {
-		document.location.href="France.html";
+		document.location.href="index.html";
 });
 document.getElementById("Italy").
 	addEventListener("click", function() {
