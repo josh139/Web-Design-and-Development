@@ -1,4 +1,4 @@
-# WebDesign-and-Development
+# Web-Design-and-Development
 For this project I was tasked with making a diagram (Site Map in SVG), View images and change text/background colour, and creating a Page Editor Page.
 This repository shows the implementation of these tasks. Below are snapshots of the files. The files can also be viewed on github-pages on the bottom right.
 
